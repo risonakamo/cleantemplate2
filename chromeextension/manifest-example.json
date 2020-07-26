@@ -1,0 +1,8 @@
+{
+    "manifest_version":2,
+    "name":"<display name of extension>",
+    "short_name":"<chrome use short name>",
+    "description":"<description>",
+    "version":"<version number>",
+    "homepage_url":"<url>"
+}
