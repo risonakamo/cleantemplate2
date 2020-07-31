@@ -2,8 +2,9 @@
     "compilerOptions":{
         "strict":true,
         "outDir":"build",
-        "lib":["ESNext"],
-        "module":"CommonJS"
+        "lib":["ESNext","DOM"],
+        "module":"commonjs",
+        "esModuleInterop":true
     },
     "include":[
         "**/*.ts",
