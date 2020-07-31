@@ -4,8 +4,10 @@ template for setting up chrome extension
 ## npm
 recommended npm installs
 ```bash
-npm link @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli
+npm i @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli
 ```
+
+could also install global and link in.
 
 ## downloaded libraries
 will need to download react and react dom to a folder named "libraries/react"
