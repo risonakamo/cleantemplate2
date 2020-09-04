@@ -9,7 +9,7 @@ files that should be generated for the project
 ## npm
 recommended npm installs
 ```bash
-npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader less less-loader fork-ts-checker-webpack-plugin typescript webpack webpack-cli webpackbar
+npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader less less-loader fork-ts-checker-webpack-plugin typescript webpack webpack-cli webpackbar mini-css-extract-plugin
 ```
 
 ```bash
