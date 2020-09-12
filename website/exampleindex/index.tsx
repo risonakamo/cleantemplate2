@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
 import "./index.less";
 
 class IndexMain extends React.Component
@@ -7,7 +10,7 @@ class IndexMain extends React.Component
 
 function main()
 {
-    ReactDOM.render(<IndexMain/>,document.querySelector(".main"));
+  ReactDOM.render(<IndexMain/>,document.querySelector(".main"));
 }
 
 window.onload=main;
