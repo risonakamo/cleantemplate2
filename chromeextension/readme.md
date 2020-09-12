@@ -11,7 +11,7 @@ files that are recommended to be generated specifically for the project.
 ## npm
 recommended npm installs
 ```bash
-npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli
+npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar
 ```
 
 could also install global and link in.
