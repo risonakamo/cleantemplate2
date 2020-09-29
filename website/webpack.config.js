@@ -6,7 +6,7 @@ const WebpackBar=require("webpackbar");
 module.exports={
     mode:"development",
     entry:{
-
+        // add entry points here
     },
     output:{
         path:`${__dirname}/build`,
@@ -64,11 +64,8 @@ module.exports={
         entrypoints:false,
         modules:false,
         chunks:false,
-        assets:false
+        // assets:false
     },
 
-    "externals":{
-        "react":"",
-        "react-dom":""
-    }
+    devtool:"eval-source-map"
 };
