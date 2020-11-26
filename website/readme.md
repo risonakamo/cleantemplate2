@@ -13,6 +13,10 @@ npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader c
 ```
 
 ```bash
+npm i react react-dom
+```
+
+```bash
 npm i -D @types/react @types/react-dom
 ```
 
