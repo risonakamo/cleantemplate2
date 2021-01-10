@@ -3,6 +3,7 @@
         "strict":true,
         "jsx":"react",
         "lib":["dom","ESNext"],
+        "target":"ESNext",
         "esModuleInterop":true
     },
     "include":[

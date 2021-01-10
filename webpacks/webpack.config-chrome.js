@@ -6,7 +6,8 @@ const WebpackBar=require("webpackbar");
 module.exports={
     mode:"development",
     entry:{
-
+        // add entry points here
+        // index:"./index.tsx"
     },
     output:{
         path:`${__dirname}/build`,
@@ -29,7 +30,7 @@ module.exports={
                 test:/\.(less|css)$/,
                 use:[
                     MiniCssExtractPlugin.loader,
-                    {loader:"css-loader"},
+                    {loader:"css-loader",options:{url:false}},
                     {loader:"less-loader"}
                 ]
             }
@@ -49,23 +50,26 @@ module.exports={
         // ]),
     ],
 
-    optimization:{
-        splitChunks:{
-            chunks:"all",
-            automaticNameDelimiter:"-"
-        }
-    },
+    // optimization:{
+    //     splitChunks:{
+    //         chunks:"all",
+    //         automaticNameDelimiter:"-"
+    //     }
+    // },
 
     resolve:{
-        extensions:[".tsx",".ts",".jsx",".js"]
+        extensions:[".tsx",".ts",".jsx",".js"],
+        // alias:{
+        //     top:`${__dirname}`
+        // }
     },
-
-    devtool:"cheap-module-source-map",
 
     stats:{
         entrypoints:false,
         modules:false,
         chunks:false,
-        assets:false
-    }
+        // assets:false
+    },
+
+    devtool:"cheap-module-source-map"
 };
