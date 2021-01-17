@@ -40,7 +40,10 @@ might add these when needed
 # useful node installs
 might be useful in a node app
 
+## almost always needed
 - typescript
+
+## ones used before
 - fs-extra
 - meow
 - @types/node
@@ -48,3 +51,5 @@ might be useful in a node app
 - del
 - normalize-path
 - prompts
+- lodash
+- luxon
