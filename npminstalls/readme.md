@@ -1,9 +1,10 @@
-# common react webpage
-will probably definitely need all of this if working on something using react
+# webpage npm installs
+will probably definitely need all of this if working on something using react or svelte
 
-## dev
+## base
+both react/svelte need all this
+
 - @babel/core
-- @babel/preset-react
 - @babel/preset-typescript
 - babel-loader
 - css-loader
@@ -17,18 +18,34 @@ will probably definitely need all of this if working on something using react
 - webpackbar
 
 ```bash
-npm i -D @babel/core @babel/preset-react @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar
+npm i @babel/core @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar
 ```
 
-## not dev
+## react
+for react
+
 - react
 - react-dom
+- @babel/preset-react
+- @types/react
+- @types/react-dom
 
 ```bash
-npm i react react-dom
+npm i @babel/preset-react react react-dom @types/react @types/react-dom
 ```
 
-# other useful react installs
+## svelte
+for svelte
+
+- svelte-check
+- svelte-preprocess
+- svelte-loader
+
+```bash
+npm i svelte-loader svelte-check svelte-preprocess
+```
+
+# other useful installs
 might add these when needed
 
 - classnames
