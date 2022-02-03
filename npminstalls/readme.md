@@ -45,6 +45,17 @@ for svelte
 npm i svelte-loader svelte-check svelte-preprocess
 ```
 
+## react redux
+- redux
+- react-redux
+- @reduxjs/toolkit
+- reselect
+- @types/react-redux
+
+```bash
+npm i redux react-redux @reduxjs/toolkit reselect @types/react-redux
+```
+
 # other useful installs
 might add these when needed
 
