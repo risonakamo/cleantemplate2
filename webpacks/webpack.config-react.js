@@ -45,9 +45,11 @@ module.exports={
         new ForkTsCheckerWebpackPlugin(),
         new WebpackBar()
 
-        // new CopyPlugin([
-        //     {from:"src/index.html",to:"../"}
-        // ]),
+        // new CopyPlugin({
+        //     patterns:[
+        //         {from:"src/index.html",to:"../"}
+        //     ]
+        // }),
     ],
 
     // optimization:{
