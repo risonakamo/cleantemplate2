@@ -7,14 +7,19 @@
         "esModuleInterop":true,
         "baseUrl":".",
         "moduleResolution":"node",
+        "importHelpers":true,
         "paths":{
-            "components/*":["web/components/*"]
-        }
+            "components/*":["web/components/*"],
+            "apis/*":["web/apis/*"],
+            "lib/*":["web/lib/*"],
+            "hooks/*":["web/hooks/*"],
+        },
     },
     "include":[
         "**/*.d.ts",
-        "**/*.ts",
-        "**/*.tsx"
+
+        "web/**/*.ts",
+        "web/**/*.tsx"
     ],
     "exclude":[
         "node_modules"

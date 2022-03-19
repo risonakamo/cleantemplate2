@@ -1,7 +1,7 @@
 const MiniCssExtractPlugin=require("mini-css-extract-plugin");
 const ForkTsCheckerWebpackPlugin=require("fork-ts-checker-webpack-plugin");
-// const CopyPlugin=require("copy-webpack-plugin");
 const WebpackBar=require("webpackbar");
+// const CopyPlugin=require("copy-webpack-plugin");
 
 module.exports={
     mode:"development",
@@ -52,17 +52,14 @@ module.exports={
         // }),
     ],
 
-    // optimization:{
-    //     splitChunks:{
-    //         chunks:"all",
-    //         automaticNameDelimiter:"-"
-    //     }
-    // },
-
     resolve:{
         extensions:[".tsx",".ts",".jsx",".js"],
         // alias:{
-        //     top:`${__dirname}`
+        //     components:`${__dirname}/web/components`,
+        //     lib:`${__dirname}/web/lib`,
+        //     css:`${__dirname}/web/css`,
+        //     apis:`${__dirname}/web/apis`,
+        //     hooks:`${__dirname}/web/hooks`,
         // }
     },
 

@@ -13,12 +13,13 @@ both react/svelte need all this
 - less-loader
 - mini-css-extract-plugin
 - typescript
+- tslib
 - webpack
 - webpack-cli
 - webpackbar
 
 ```bash
-npm i @babel/core @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar
+npm i @babel/core @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar tslib
 ```
 
 ## react
