@@ -54,13 +54,13 @@ module.exports={
 
     resolve:{
         extensions:[".tsx",".ts",".jsx",".js"],
-        // alias:{
-        //     components:`${__dirname}/web/components`,
-        //     lib:`${__dirname}/web/lib`,
-        //     css:`${__dirname}/web/css`,
-        //     apis:`${__dirname}/web/apis`,
-        //     hooks:`${__dirname}/web/hooks`,
-        // }
+        alias:{
+            components:`${__dirname}/web/components`,
+            lib:`${__dirname}/web/lib`,
+            css:`${__dirname}/web/css`,
+            apis:`${__dirname}/web/apis`,
+            hooks:`${__dirname}/web/hooks`
+        }
     },
 
     stats:{
