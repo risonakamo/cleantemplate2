@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {createRoot,Root} from "react-dom/client";
 
 import "./index.less";
 
@@ -12,7 +12,8 @@ function IndexMain():JSX.Element
 
 function main()
 {
-  ReactDOM.render(<IndexMain/>,document.querySelector(".main"));
+  const root:Root=createRoot(document.querySelector(".main")!);
+  root.render(<IndexMain/>);
 }
 
 window.onload=main;
