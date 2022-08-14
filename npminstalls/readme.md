@@ -1,7 +1,7 @@
 # webpage npm installs
 will probably definitely need all of this if working on something using react or svelte
 
-## base
+## webpack base
 both react/svelte need all this
 
 - @babel/core
@@ -20,6 +20,21 @@ both react/svelte need all this
 
 ```bash
 npm i @babel/core @babel/preset-typescript babel-loader css-loader fork-ts-checker-webpack-plugin less less-loader mini-css-extract-plugin typescript webpack webpack-cli webpackbar tslib
+```
+
+## vite base (react)
+- vite
+- vite-plugin-checker
+- @vitejs/plugin-react
+- react
+- react-dom
+- @types/react
+- @types/react-dom
+- typescript
+- less
+
+```bash
+npm i vite vite-plugin-checker @vitejs/plugin-react react react-dom @types/react @types/react-dom typescript less
 ```
 
 ## react
