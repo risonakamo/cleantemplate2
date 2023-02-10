@@ -1,7 +1,6 @@
-import React from "react";
 import {createRoot} from "react-dom/client";
 
-import "./index.less";
+import "./index.module.less";
 
 function IndexMain():JSX.Element
 {

@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build":"vite build -w false",
+        "watch":"vite build -w true"
+    }
+}

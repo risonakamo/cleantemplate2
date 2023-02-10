@@ -1,8 +1,6 @@
-import React from "react";
+import "./component.module.less";
 
-import "./component.less";
-
-export default function ComponentName():JSX.Element
+export function ComponentName():JSX.Element
 {
   return <componenthtml>;
 }
