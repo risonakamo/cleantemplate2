@@ -49,6 +49,8 @@ bold=almost always used
 - react-router
 - luxon
 - storybook
+- immer
+- loglevel
 - ~~copy-webpack-plugin~~
 
 # useful installs for node
