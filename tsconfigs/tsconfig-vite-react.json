@@ -36,7 +36,9 @@
     "include":[
         "**/*.d.ts",
         "web/**/*.ts",
-        "web/**/*.tsx"
+        "web/**/*.tsx",
+        "stories/**/*.ts",
+        "stories/**/*.tsx"
     ],
 
     "exclude":[
