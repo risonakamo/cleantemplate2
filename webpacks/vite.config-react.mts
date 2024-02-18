@@ -1,6 +1,10 @@
+// used for react webpage development
+
 import {defineConfig} from "vite";
 import react from "@vitejs/plugin-react";
 import checker from "vite-plugin-checker";
+import tsconfigPaths from "vite-tsconfig-paths";
+import {LogLevel,RollupLog,LogHandler} from "rollup";
 
 declare const __dirname:string;
 
@@ -12,35 +16,37 @@ export default defineConfig({
         react(),
         checker({
             typescript:true
-        })
+        }),
+        tsconfigPaths()
     ],
 
     resolve:{
         alias:{
-            components:`${__dirname}/web/components`,
-            lib:`${__dirname}/web/lib`,
             css:`${__dirname}/web/css`,
-            apis:`${__dirname}/web/apis`,
-            hooks:`${__dirname}/web/hooks`,
-            store:`${__dirname}/web/store`,
             assets:`${__dirname}/web/assets`
         }
-    },
-
-    server:{
-        port:4000,
-        hmr:false
     },
 
     build:{
         outDir:`${__dirname}/build`,
         target:["esnext"],
         sourcemap:true,
+        emptyOutDir:true,
 
         rollupOptions:{
             input:{
-                index:`${__dirname}/web/html/index.html`,
-            }
+                // index:`${__dirname}/web/html/index.html`,
+            },
+
+            // onLog(level:LogLevel,log:RollupLog,handler:LogHandler):void
+            // {
+            //     if (log.message.includes("Error when using sourcemap for reporting"))
+            //     {
+            //         return;
+            //     }
+
+            //     handler(level,log);
+            // }
         }
     }
 });
