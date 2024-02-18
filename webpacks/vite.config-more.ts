@@ -1,4 +1,4 @@
-// vite config with additional examples of options
+// vite config with additional examples of options. copy to normal vite config as needed
 
 import {defineConfig} from "vite";
 import react from "@vitejs/plugin-react";
@@ -8,13 +8,19 @@ import {RollupWarning,WarningHandler} from "rollup";
 declare const __dirname:string;
 
 export default defineConfig({
+    baseUrl:"/somewhere/",
+
     root:`${__dirname}/web/html`,
+    // matches .env name (ex: .env.custommode). "development" selects .env with no name
     mode:"development",
+    envDir:`${__dirname}/viteenv`,
+    publicDir:`${__dirname}/web/public`,
 
     plugins:[
         react(),
         checker({
             typescript:{
+                // select alternate tsconfig for build vscode's tsconfig
                 tsconfigPath:"tsconfig.vite.json"
             }
         })
@@ -26,7 +32,9 @@ export default defineConfig({
             lib:`${__dirname}/web/lib`,
             css:`${__dirname}/web/css`,
             apis:`${__dirname}/web/apis`,
-            hooks:`${__dirname}/web/hooks`
+            hooks:`${__dirname}/web/hooks`,
+            store:`${__dirname}/web/store`,
+            assets:`${__dirname}/web/assets`
         }
     },
 
@@ -39,6 +47,7 @@ export default defineConfig({
         outDir:`${__dirname}/build`,
         target:["esnext"],
         emptyOutDir:true,
+        sourcemap:true,
 
         chunkSizeWarningLimit:1000,
         rollupOptions:{
