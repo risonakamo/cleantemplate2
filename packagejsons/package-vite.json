@@ -1,6 +1,7 @@
 {
     "scripts": {
         "build":"vite build -w false",
-        "watch":"vite build -w true"
+        "watch":"vite build -w true",
+        "storybook": "storybook dev -p 6006 --no-open"
     }
 }

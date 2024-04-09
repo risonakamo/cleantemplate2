@@ -31,22 +31,23 @@ export default defineConfig({
         outDir:`${__dirname}/build`,
         target:["esnext"],
         sourcemap:true,
-        emptyOutDir:true,
+        // emptyOutDir:true,
+        minify:false,
 
         rollupOptions:{
             input:{
                 // index:`${__dirname}/web/html/index.html`,
             },
 
-            // onLog(level:LogLevel,log:RollupLog,handler:LogHandler):void
-            // {
-            //     if (log.message.includes("Error when using sourcemap for reporting"))
-            //     {
-            //         return;
-            //     }
+            onLog(level:LogLevel,log:RollupLog,handler:LogHandler):void
+            {
+                if (log.message.includes("Error when using sourcemap for reporting"))
+                {
+                    return;
+                }
 
-            //     handler(level,log);
-            // }
+                handler(level,log);
+            }
         }
     }
 });

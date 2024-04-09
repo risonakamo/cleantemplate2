@@ -12,9 +12,10 @@ npms for building webpages
 - typescript
 - less
 - vite-tsconfig-paths
+- rollup
 
 ```bash
-npm i vite vite-plugin-checker @vitejs/plugin-react react react-dom @types/react @types/react-dom typescript less vite-tsconfig-paths
+npm i vite vite-plugin-checker @vitejs/plugin-react react react-dom @types/react @types/react-dom typescript less vite-tsconfig-paths rollup
 ```
 
 ## svelte
